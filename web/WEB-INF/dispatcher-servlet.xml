@@ -10,6 +10,7 @@
             http://www.springframework.org/schema/mvc
             http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
 
+    <!-- 包括了映射器RequestMappingHandlerMapping和适配器RequestMappingHandlerAdapter -->
     <mvc:annotation-driven/>
 
     <context:component-scan base-package="com.yyl.europa"/>
@@ -20,9 +21,9 @@
 
         使用Url与spring ioc容器中的注解比较
     -->
-    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
+    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
 
-    </bean>
+    </bean>-->
 
     <!--
         适配器
@@ -31,9 +32,9 @@
 
         要求控制器必须有@Controller注解
     -->
-    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+    <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
 
-    </bean>
+    </bean>-->
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/"></property>
