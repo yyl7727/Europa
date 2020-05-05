@@ -1,11 +1,13 @@
 package com.yyl.europa;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class UserInfo implements Serializable {
     private Integer id;
     private String username;
     private String password;
+    private Date birthday;
 
     public Integer getId() {
         return id;
@@ -31,12 +33,21 @@ public class UserInfo implements Serializable {
         this.password = password;
     }
 
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
+
     @Override
     public String toString() {
         return "UserInfo{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
+                ", birthday=" + birthday +
                 '}';
     }
 }

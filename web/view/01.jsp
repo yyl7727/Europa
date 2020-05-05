@@ -19,6 +19,7 @@
         id: <input type="text" name="id">
         username: <input type="text" name="username">
         password: <input type="text" name="password">
+        birthday: <input type="text" name="birthday">
         <button type="submit">GO</button>
     </form>
 </body>

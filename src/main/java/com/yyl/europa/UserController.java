@@ -16,13 +16,13 @@ public class UserController {
     @RequestMapping("f2")
     public String f2(UserInfo userInfo){
         System.out.println(userInfo);
-        return null;
+        return "redirect:/user/f4";
     }
 
     @RequestMapping("f3")
     public String f3(){
         System.out.println("f3..");
-        return "forward:f4";
+        return "forward:/user/f4";
     }
 
     @RequestMapping("f4")
