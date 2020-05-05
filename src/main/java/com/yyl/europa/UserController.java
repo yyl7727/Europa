@@ -18,4 +18,16 @@ public class UserController {
         System.out.println(userInfo);
         return null;
     }
+
+    @RequestMapping("f3")
+    public String f3(){
+        System.out.println("f3..");
+        return "forward:f4";
+    }
+
+    @RequestMapping("f4")
+    public String f4(){
+        System.out.println("f4..");
+        return null;
+    }
 }
