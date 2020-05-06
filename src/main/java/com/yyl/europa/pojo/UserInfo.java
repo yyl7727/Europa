@@ -1,4 +1,4 @@
-package com.yyl.europa;
+package com.yyl.europa.pojo;
 
 import java.io.Serializable;
 import java.util.Date;

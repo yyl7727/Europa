@@ -1,5 +1,6 @@
-package com.yyl.europa;
+package com.yyl.europa.controller;
 
+import com.yyl.europa.pojo.UserInfo;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 

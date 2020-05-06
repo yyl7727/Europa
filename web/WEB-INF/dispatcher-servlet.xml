@@ -45,7 +45,7 @@
     <bean id="conversionServiceFactoryBean" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
         <property name="converters">
             <set>
-                <bean class="com.yyl.europa.DateConvert"></bean>
+                <bean class="com.yyl.europa.util.DateConvert"></bean>
             </set>
         </property>
     </bean>
