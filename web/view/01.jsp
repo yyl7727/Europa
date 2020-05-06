@@ -22,5 +22,8 @@
         birthday: <input type="text" name="birthday">
         <button type="submit">GO</button>
     </form>
+    ${requestScope.a}
+    ${sessionScope.a}
+    ${applicationScope.a}
 </body>
 </html>
