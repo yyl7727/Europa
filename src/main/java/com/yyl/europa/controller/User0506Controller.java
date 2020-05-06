@@ -2,6 +2,7 @@ package com.yyl.europa.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -16,6 +17,7 @@ public class User0506Controller {
     /*
     在springmvc的controller方法中如何获取web元素
      */
+
     @RequestMapping("f1")
     public String f1(HttpServletRequest request, HttpSession session, HttpServletResponse response){
         request.setAttribute("a","书包");
@@ -40,5 +42,14 @@ public class User0506Controller {
     public String f4(RedirectAttributes attributes){
         attributes.addAttribute("a","重定向");
         return "redirect:/view/01.jsp";
+    }
+
+    /*
+    路径变量的应用
+     */
+    @RequestMapping("f5/{Id}")
+    public String f5(@PathVariable String Id){
+        System.out.println(Id);
+        return null;
     }
 }
